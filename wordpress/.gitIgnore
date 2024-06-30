@@ -1,0 +1,42 @@
+# WordPress core files
+/wp-admin/
+/wp-includes/
+
+# WordPress content directories
+wp-content/plugins/*
+wp-content/themes/*
+
+# Include specific plugins and themes
+!wp-content/plugins/example-plugin/
+!wp-content/themes/example-theme/
+
+# Exclude plugin/theme development directories
+wp-content/plugins/example-plugin/node_modules/
+wp-content/themes/example-theme/node_modules/
+
+# Exclude logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Exclude OS-specific files
+.DS_Store
+Thumbs.db
+
+# Exclude PHPStorm project files
+.idea/
+
+# Exclude NetBeans project files
+nbproject/
+
+# Exclude Dreamweaver project files
+_notes/
+
+# Exclude hidden files from other OS
+ehthumbs.db
+desktop.ini
+
+# Exclude version control directories
+.svn/
+.git/
+.hg/
