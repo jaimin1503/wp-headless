@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   useEffect(() => {
@@ -9,7 +10,8 @@ export default function Home() {
       .then((res) => console.log(res.data));
   });
   return (
-    <div>
+    <div className=" w-screen min-h-screen bg-[#FFF8DB]">
+      <Navbar />
       <h1 className=" text-4xl font-bold">Home</h1>
       <Link to={"/signup"}>Signup</Link>
     </div>
